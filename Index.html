@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ <title>Cross-a-ai</title>
+ <style>
+ html, body {
+ margin: 0;
+ padding: 0;
+ width: 100vw;
+ /* Nutzt dvh (Dynamic Viewport) und fällt auf vh zurück, falls der Browser es nicht kennt */
+ height: 100vh;
+ height: 100dvh; 
+ overflow: hidden;
+ background-color: hsl(220, 80%, 12%);
+ }
+
+ iframe {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100vw;
+ height: 100vh;
+ height: 100dvh; /* Zwingt den IFrame, exakt im sichtbaren Bereich zu bleiben */
+ border: none;
+ margin: 0;
+ padding: 0;
+ }
+ </style>
+</head>
+<body>
+ <iframe src="https://cross-a-ai.lovable.app" 
+ title="Cross-a-chat"
+ allow="camera; microphone; fullscreen">
+ </iframe>
+</body>
+</html>
